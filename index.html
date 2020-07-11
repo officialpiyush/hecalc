@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>HECALC</title>
+</head>
+<body>
+    <div class="container">
+        <img src="./assets/heat_exchanger.svg" alt="heat_exchanger" class="he-img">
+        
+        <h2>Design of your Heat Exchanger is <span><span id="output">36</span> m<sup>2</sup> </h1></span>
+
+            <div class="box">
+            <label for="outer-diameter">Outer Diameter of Pipe (MM)</label>
+            <input name="outer-diameter" type="number" value="25.4" id="diam">
+
+            <label for="pipe-length">Length of Pipe (MM)</label>
+            <input name="pipe-length" type="number" value="3000" id="len">
+
+            <label for="no-of-pipe">No. of Pipe</label>
+            <input name="no-of-pipe" type="number" value="150" id="num">
+            <button onclick="calculate()" class="button" id="calc">Calculate</button>
+            </div>
+
+    </div>
+
+    <script src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
