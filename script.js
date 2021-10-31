@@ -21,7 +21,7 @@ function calculate() {
 }
 
 $(document).on("keypress", function (e) {
-  if (e.which === 13) {
+  if (e.key.toLowerCase() === "enter) {
     calculate();
   }
 });
